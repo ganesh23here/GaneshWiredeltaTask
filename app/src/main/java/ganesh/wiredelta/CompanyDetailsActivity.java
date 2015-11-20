@@ -4,22 +4,31 @@ package ganesh.wiredelta;
  * Created by Ganesh on 20/11/15.
  */
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 public class CompanyDetailsActivity extends AppCompatActivity {
 
-    private TextView textViewBookId;
+    private TextView companyID, companyName, companyOwner, companyStartDate, companyDescription, companyDepartments;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_show_book_details);
-        textViewBookId = (TextView) findViewById(R.id.textViewBookId);
+        setContentView(R.layout.activity_company_details);
+        companyID = (TextView) findViewById(R.id.companyID);
+        companyName = (TextView) findViewById(R.id.companyName);
+        companyOwner = (TextView) findViewById(R.id.companyOwner);
+        companyStartDate = (TextView) findViewById(R.id.companyStartDate);
+        companyDescription = (TextView) findViewById(R.id.companyDescription);
+        companyDepartments = (TextView) findViewById(R.id.companyDepartments);
 
         Company company = (Company) getIntent().getSerializableExtra("company");
-        textViewBookId.setText(String.valueOf(company.getCompanyID()));
+        companyID.setText(String.valueOf(company.getCompanyID()));
+        companyName.setText(String.valueOf(company.getComapnyName()));
+        companyOwner.setText(String.valueOf(company.getCompanyOwner()));
+        companyStartDate.setText(String.valueOf(company.getCompanyStartDate()));
+        companyDescription.setText(String.valueOf(company.getCompanyDescription()));
+        companyDepartments.setText(String.valueOf(company.getCompanyDepartments()));
     }
 }

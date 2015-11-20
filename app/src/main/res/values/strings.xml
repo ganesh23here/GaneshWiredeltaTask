@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Wiredelta</string>
+
+    <array name="department_filter">
+        <item>Accounting</item>
+        <item>Advertising</item>
+        <item>Asset Management</item>
+        <item>Customer Relations</item>
+        <item>Customer Service</item>
+        <item>Finances</item>
+        <item>Human Resources</item>
+        <item>Legal Department</item>
+        <item>Media Relations</item>
+        <item>Payroll|Public Relations</item>
+        <item>Quality Assurance</item>
+        <item>Sales and Marketing</item>
+        <item>Research and Development</item>
+        <item>Tech Support</item>
+    </array>
 </resources>
