@@ -5,6 +5,7 @@ package ganesh.wiredelta;
  */
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
@@ -16,6 +17,12 @@ public class CompanyDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_company_details);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setLogo(R.drawable.wd_logo);
+        actionBar.setDisplayUseLogoEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
+
         companyID = (TextView) findViewById(R.id.companyID);
         companyName = (TextView) findViewById(R.id.companyName);
         companyOwner = (TextView) findViewById(R.id.companyOwner);

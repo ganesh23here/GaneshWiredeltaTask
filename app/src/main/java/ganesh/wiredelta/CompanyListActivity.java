@@ -4,6 +4,7 @@ package ganesh.wiredelta;
  * Created by Ganesh on 20/11/15.
  */
 
+import android.support.v7.app.ActionBar;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -44,6 +45,11 @@ public class CompanyListActivity extends AppCompatActivity implements ListView.O
         listViewCompanies = (ListView) findViewById(R.id.listViewCompanies);
         inputSearch = (EditText) findViewById(R.id.inputSearch);
         findViewById(R.id.filterButton).setOnClickListener(this);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setLogo(R.drawable.wd_logo);
+        actionBar.setDisplayUseLogoEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
 
         getCompanies();
         listViewCompanies.setOnItemClickListener(this);
