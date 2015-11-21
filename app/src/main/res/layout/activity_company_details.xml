@@ -10,12 +10,18 @@
         android:layout_height="wrap_content"
         android:gravity="center_vertical">
 
-        <TableRow>
+        <TableRow android:layout_marginTop="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Company ID:"/>
+                android:text="ID"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"/>
 
             <TextView
                 android:id="@+id/companyID"
@@ -25,12 +31,18 @@
         </TableRow>
 
 
-        <TableRow>
+        <TableRow android:layout_marginTop="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Company Name:"/>
+                android:text="Name"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"/>
 
             <TextView
                 android:id="@+id/companyName"
@@ -39,12 +51,18 @@
                 />
         </TableRow>
 
-        <TableRow>
+        <TableRow android:layout_marginTop="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Company Owner:"/>
+                android:text="Owner"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"/>
 
             <TextView
                 android:id="@+id/companyOwner"
@@ -53,12 +71,18 @@
                 />
         </TableRow>
 
-        <TableRow>
+        <TableRow android:layout_marginTop="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Start Date:"/>
+                android:text="Start Date"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"/>
 
 
             <TextView
@@ -69,12 +93,18 @@
         </TableRow>
 
 
-        <TableRow>
+        <TableRow android:layout_marginTop="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Department:"/>
+                android:text="Department"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"/>
 
             <TextView
                 android:id="@+id/companyDepartments"
@@ -89,8 +119,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dip"
-        android:text="Description:"/>
+        android:layout_marginTop="20dip"
+        android:text="Description:"
+        android:textStyle="bold"/>
 
     <View
         android:layout_width="match_parent"
